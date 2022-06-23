@@ -1,6 +1,6 @@
 from MarkLib.builder import ModelBuilder
 from MarkLib.models.base import BinTreeNode, Point, Region
-from kd_tree.model import Intersection, KdTree, KdTreeInterscetionCell, KdTreeOrderedLists, KdTreePartitionCell, KdTreePartitionTableRow, KdTreePoint, KdTreePartitionTable, KdTreePointCell, KdTreeSearchTable, KdTreeSearchTableRow, KdTreeToAddCell, Partition, ToAddKdTree
+from .model import Intersection, KdTree, KdTreeInterscetionCell, KdTreeOrderedLists, KdTreePartitionCell, KdTreePartitionTableRow, KdTreePoint, KdTreePartitionTable, KdTreePointCell, KdTreeSearchTable, KdTreeSearchTableRow, KdTreeToAddCell, Partition, ToAddKdTree
 
 
 class KdTreeModelBuilder(ModelBuilder):

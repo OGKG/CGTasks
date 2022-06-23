@@ -1,7 +1,7 @@
-from graham.model import GrahamPointList, GrahamTable, PiCompare
+from functools import partial
 from MarkLib.grader import Grader, default_grading, iterable_grading
 from MarkLib.markdata import MarkData, ItemMarkData, Mistake
-from functools import partial
+from .model import GrahamPointList, GrahamTable, PiCompare
 
 
 default025 = partial(default_grading, sub=0.25)

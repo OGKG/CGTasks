@@ -6,7 +6,7 @@ from kd_tree.model import Intersection, KdTree, KdTreeInterscetionCell, KdTreeOr
 from quickhull.model import QuickhullInitialPartition, QuickhullNodeData, QuickhullPartition, QuickhullPoint, QuickhullTree, QuickhullTreeNode
 from graham.task import GrahamTask
 from kd_tree.task import KdTreeTask
-# from quickhull.task import QuickhullTask
+from quickhull.task import QuickhullTask
 
 
 class TestTasks(TestCase):

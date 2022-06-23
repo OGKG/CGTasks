@@ -1,7 +1,7 @@
 from functools import partial
-from kd_tree.model import KdTree, KdTreeOrderedLists, KdTreePartitionTable, KdTreeSearchTable
 from MarkLib.grader import Grader, iterable_grading
-from MarkLib.markdata import MarkData, Mistake, ItemMarkData
+from MarkLib.markdata import MarkData, ItemMarkData
+from .model import KdTree, KdTreeOrderedLists, KdTreePartitionTable, KdTreeSearchTable
 
 
 iterable025 = partial(iterable_grading, sub=0.25)

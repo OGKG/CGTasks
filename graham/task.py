@@ -1,10 +1,9 @@
-import graham.grader as models
+from CGLib.algo.graham import graham
+from CGLib.models.point import Point
 from MarkLib.task import Task
 from MarkLib.taskstage import TaskStage
 from MarkLib.taskitem import TaskItem
-from graham.builder import GrahamModelBuilder
-from CGLib.algo.graham import graham
-from CGLib.models.point import Point
+from .builder import GrahamModelBuilder
 
 
 class GrahamItemInternalPoint(TaskItem):

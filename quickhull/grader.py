@@ -1,7 +1,7 @@
 from functools import partial
-from quickhull.model import QuickhullPartition, QuickhullTree
 from MarkLib.grader import Grader, default_grading, iterable_grading
 from MarkLib.markdata import MarkData, ItemMarkData
+from .model import QuickhullPartition, QuickhullTree
 
 
 default025 = partial(default_grading, sub=0.25)

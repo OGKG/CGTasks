@@ -1,6 +1,6 @@
-from CGLib.models.bin_tree_node import QuickhullNode
 from MarkLib.builder import ModelBuilder
-from quickhull.model import QuickhullInitialPartition, QuickhullNodeData, QuickhullPartition, QuickhullPoint, QuickhullTree, QuickhullTreeNode
+from .model import QuickhullInitialPartition, QuickhullNodeData, QuickhullPartition, QuickhullPoint, QuickhullTree, QuickhullTreeNode
+
 
 class QuickhullModelBuilder(ModelBuilder):
     @classmethod

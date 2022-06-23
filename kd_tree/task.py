@@ -1,10 +1,9 @@
-import kd_tree.model as models
+from CGLib.algo.kd_tree_method import kd_tree
+from CGLib.models.point import Point
 from MarkLib.task import Task
 from MarkLib.taskstage import TaskStage
 from MarkLib.taskitem import TaskItem
-from kd_tree.builder import KdTreeModelBuilder
-from CGLib.algo.kd_tree_method import kd_tree
-from CGLib.models.point import Point
+from .builder import KdTreeModelBuilder
 
 
 class KdTreeItemOrderedList(TaskItem):

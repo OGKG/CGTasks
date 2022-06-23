@@ -1,10 +1,9 @@
 from CGLib.algo.quickhull import quickhull
 from CGLib.models.point import Point
-import quickhull.model as models
 from MarkLib.task import Task
 from MarkLib.taskitem import TaskItem
 from MarkLib.taskstage import TaskStage
-from quickhull.builder import QuickhullModelBuilder
+from .builder import QuickhullModelBuilder
 
 
 class QuickhullItemPartition(TaskItem):
