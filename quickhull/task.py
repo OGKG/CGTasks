@@ -3,11 +3,13 @@ from CGLib.models.point import Point
 from MarkLib.task import Task
 from MarkLib.taskitem import TaskItem
 from MarkLib.taskstage import TaskStage
+from quickhull.model import QuickhullPartition, QuickhullTree
 from .builder import QuickhullModelBuilder
 
 
 class QuickhullItemPartition(TaskItem):
     description = "Здійснити розбиття. Подати у вигляді дерева."
+    answer: QuickhullPartition
 
 
 class QuickhullStagePartition(TaskStage):
@@ -17,6 +19,7 @@ class QuickhullStagePartition(TaskStage):
 
 class QuickhullItemMerge(TaskItem):
     description = "Злиття. Рекурсивний підйом, результат - конкатенація списків. Починаючи із листків дерева, рекурсивно конкатенуємо упорядковані за годинниковою стрілкою списки."
+    answer: QuickhullTree
 
 
 class QuickhullStageMerge(TaskStage):

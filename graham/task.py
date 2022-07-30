@@ -3,11 +3,13 @@ from CGLib.models.point import Point
 from MarkLib.task import Task
 from MarkLib.taskstage import TaskStage
 from MarkLib.taskitem import TaskItem
+from graham.model import GrahamPoint, GrahamPointList, GrahamTable
 from .builder import GrahamModelBuilder
 
 
 class GrahamItemInternalPoint(TaskItem):
     description = "Задана множина S із N точок на площині. Знайти внутрішню точку q."
+    answer: GrahamPoint
 
 
 class GrahamStageInternalPoint(TaskStage):
@@ -17,6 +19,7 @@ class GrahamStageInternalPoint(TaskStage):
 
 class GrahamItemOrderedList(TaskItem):
     description = "Використовуючи q як початок координат, побудувати упорядкований за полярним кутом список точок множини S, починаючи із точки \"початок\" проти годинникової стрілки."
+    answer: GrahamPointList
 
 
 class GrahamStageOrderedList(TaskStage):
@@ -26,6 +29,7 @@ class GrahamStageOrderedList(TaskStage):
 
 class GrahamItemOriginPoint(TaskItem):
     description = "Знайти точку \"початок\"."
+    answer: GrahamPoint
 
 
 class GrahamStageOriginPoint(TaskStage):
@@ -35,6 +39,7 @@ class GrahamStageOriginPoint(TaskStage):
 
 class GrahamItemLookup(TaskItem):
     description = "Організувати обхід."
+    answer: GrahamTable
 
 
 class GrahamStageLookup(TaskStage):

@@ -3,15 +3,18 @@ from CGLib.models.point import Point
 from MarkLib.task import Task
 from MarkLib.taskstage import TaskStage
 from MarkLib.taskitem import TaskItem
+from kd_tree.model import KdTree, KdTreeOrderedLists, KdTreePartitionTable, KdTreeSearchTable
 from .builder import KdTreeModelBuilder
 
 
 class KdTreeItemOrderedList(TaskItem):
     description = "Побудувати відсортований по X список."
+    answer: KdTreeOrderedLists
 
 
 class KdTreeItemPartition(TaskItem):
     description = "Рекурсивно розбити площину на прямокутники."
+    answer: KdTreePartitionTable
 
 
 class KdTreeStagePreprocessing(TaskStage):
@@ -21,6 +24,7 @@ class KdTreeStagePreprocessing(TaskStage):
 
 class KdTreeItemTree(TaskItem):
     description = "Побудувати дерево пошуку."
+    answer: KdTree
 
 
 class KdTreeStageTree(TaskStage):
@@ -30,6 +34,7 @@ class KdTreeStageTree(TaskStage):
 
 class KdTreeItemSearch(TaskItem):
     description = "Здійснити пошук у дереві."
+    answer: KdTreeSearchTable
 
 
 class KdTreeStageSearch(TaskStage):
