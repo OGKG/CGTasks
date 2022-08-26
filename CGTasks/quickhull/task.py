@@ -3,7 +3,7 @@ from CGLib.models.point import Point
 from MarkLib.task import Task
 from MarkLib.taskitem import TaskItem
 from MarkLib.taskstage import TaskStage
-from quickhull.model import QuickhullPartition, QuickhullTree
+from CGTasks.quickhull.model import QuickhullPartition, QuickhullTree
 from .builder import QuickhullModelBuilder
 
 

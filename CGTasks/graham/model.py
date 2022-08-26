@@ -1,9 +1,21 @@
 from MarkLib.models.base import Point, HeaderTable, TableCell, TableRow, PointList
 from enum import Enum
+from pydantic import BaseModel
 
 
 class GrahamPoint(Point):
     pass
+
+class Point(BaseModel):
+    x: float = 0
+    y: float = 0
+
+    def __eq__(self, other) -> bool:
+        return (
+            isinstance(other, Point) and
+            isclose(self.x, other.x, abs_tol=1e-3) and
+            isclose(self.y, other.y, abs_tol=1e-3)
+        )
 
 
 class GrahamPointList(PointList):

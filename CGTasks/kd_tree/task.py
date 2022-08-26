@@ -3,7 +3,7 @@ from CGLib.models.point import Point
 from MarkLib.task import Task
 from MarkLib.taskstage import TaskStage
 from MarkLib.taskitem import TaskItem
-from kd_tree.model import KdTree, KdTreeOrderedLists, KdTreePartitionTable, KdTreeSearchTable
+from CGTasks.kd_tree.model import KdTree, KdTreeOrderedLists, KdTreePartitionTable, KdTreeSearchTable
 from .builder import KdTreeModelBuilder
 
 

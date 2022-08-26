@@ -3,7 +3,7 @@ from CGLib.models.point import Point
 from MarkLib.task import Task
 from MarkLib.taskstage import TaskStage
 from MarkLib.taskitem import TaskItem
-from graham.model import GrahamPoint, GrahamPointList, GrahamTable
+from CGTasks.graham.model import GrahamPoint, GrahamPointList, GrahamTable
 from .builder import GrahamModelBuilder
 
 
